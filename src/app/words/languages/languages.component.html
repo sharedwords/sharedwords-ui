@@ -1,0 +1,6 @@
+<button md-raised-button [routerLink]="['new']">Add language</button>
+
+
+<md-list>
+  <md-list-item *ngFor="let language of getLanguages()">{{language.name}}</md-list-item>
+</md-list>

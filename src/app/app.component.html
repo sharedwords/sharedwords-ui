@@ -1,0 +1,11 @@
+<md-sidenav-layout>
+  <md-sidenav #start (open)="closeStartButton.focus()" [mode]="over" [align]="start">
+    <button md-button [routerLink]="['languages']">Languages</button>
+    <md-divider></md-divider>
+    <button md-button #closeStartButton (click)="start.close()">Close</button>
+  </md-sidenav>
+
+  <button md-button (click)="start.open()">Open start sidenav</button>
+
+  <router-outlet></router-outlet>
+</md-sidenav-layout>
